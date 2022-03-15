@@ -202,6 +202,14 @@ img, iframe {
   margin-right:auto;
 }
 
+#horiImg1 {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
+
 #vertiImg {
   width: 100%;
   height: auto;
