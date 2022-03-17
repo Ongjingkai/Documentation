@@ -97,24 +97,23 @@ display: inline-block;
 }
 
 #btt {
-  display: none;
-  position: fixed;
-
-  bottom: 30px;
-  right: 10px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #333;
-  color: #FFF;
-  cursor: pointer;
-  padding: 20px 10px;
-  border-radius: 10px;
-  font-size: 80%;
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+border: none;
+outline: none;
+background-color: red;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 10px;
+font-size: 18px;
 }
 
 #btt:hover {
-  background-color: #444;
+  background-color: #555;
 }
 
 
