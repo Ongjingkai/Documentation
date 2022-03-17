@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -6,6 +5,25 @@
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
   </head>
   <body>
+    <button onclick="topFunction()" id="btt" title="Back to top">Back to Top</button>
+    <script>
+    var backtotop = document.getElementById("btt");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backtotop.style.display = "block";
+      } else {
+        backtotop.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 <!--Navigation tab below-->
 <div id="navigation">
   <nav>
@@ -21,6 +39,7 @@
           <li class="dropdown">
             <a href:"javascript:void(0)" class="dropbtn">FYP Documation</a>
             <div class="dropdown-content">
+              <a href="../fyp/chronology.html">Chronology</a>
             <a href="../fyp/composite.html">Composite</a>
             </div>
           </li>
@@ -28,9 +47,6 @@
   </nav>
 </div>
 
-<!--gototopbutton-->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!--End-->
 
 <!--content-->
 <a name="top"></a>
@@ -195,25 +211,7 @@ Let me just save your time by giving you the link to both arduino. Trust me and 
 
 </div>
 </div>
-<!--back to top script-->
-<script>
-mybutton = document.getElementById("myBtn");
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
-<!--End-->
 
       </div>
     </div>

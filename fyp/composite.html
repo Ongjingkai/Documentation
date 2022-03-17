@@ -6,6 +6,25 @@
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
   </head>
   <body>
+    <button onclick="topFunction()" id="btt" title="Back to top">Back to Top</button>
+    <script>
+    var backtotop = document.getElementById("btt");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backtotop.style.display = "block";
+      } else {
+        backtotop.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 <!--Navigation tab below-->
 <div id="navigation">
   <nav>
@@ -21,6 +40,7 @@
           <li class="dropdown">
             <a href:"javascript:void(0)" class="dropbtn">FYP Documation</a>
             <div class="dropdown-content">
+              <a href="chronology.html">Chronology</a>
             <a class="active" href="composite.html">Composite</a>
             </div>
           </li>
@@ -53,6 +73,7 @@
                   <li><a href="#wrapori1">Wrap Orientation 1</a></li>
                   <li><a href="#wrapori2">Wrap Orientation 2</a></li>
                   <li><a href="#steps">Steps</a></li>
+                  <li><a href="#fd">Dried Composite</a></li>
                 </ul>
             </div>
   <!--End-->
@@ -132,7 +153,7 @@
   <table>
   <tr>
   <th><img id="horiImg1" src="../images/fyp/composite/carbonsheets.jpg"><br></th>
-  <th><img id="horiImg1" src="../images/fyp/composite/layout.jpg"><br></th>
+  <th id="step2"><img id="horiImg1" src="../images/fyp/composite/layout.jpg"><br></th>
   </tr>
     </table>
 <table align="center">
@@ -143,7 +164,6 @@
   </table>
 </div>
 
-
 <!--Step 3-->
 <h4 align="center">Step 3</h4>
 <table>
@@ -153,14 +173,105 @@
 </tr>
   </table>
 
-  <h4 align="center">Apply sealent tape around the part, do not remove the cover to prevent any dust from sticking onto the sealent tape.</h4>
+  <h4 align="center">Apply sealent tape around the part, do not remove the cover to prevent any dust from sticking onto the sealent tape.</h4><br>
 
+<h4 align="center">PPE REQUIRED</h4>
+<th><img id="horiImg1" src="../images/fyp/composite/PPE.jpg"><br></th>
+<h4 align="center">The next step would require you to use gloves for your own safety</h4>
+  <!--Step 4-->
+  <div id="boxc">
+  <h4 align="center">Step 4</h4>
+  <table>
+  <tr>
+  <th><img id="horiImg1" src="../images/fyp/composite/rasin1.jpg"><br></th>
+  <th><img id="horiImg1" src="../images/fyp/composite/rasin2.jpg"><br></th>
+  </tr>
+    </table>
+
+    <h4 align="center">Mix the epoxy in a ration of 5(part A):3(Part B). Follow the formula below to get the right value.</h4>
+    <img id="horiImg1" src="../images/fyp/composite/calucation.PNG">
 </div>
 
-
-
-
+<!--Step 5-->
+<h4 align="center">Step 5</h4>
+<table>
+<tr>
+<th><img id="horiImg1" src="../images/fyp/composite/prepforsealing.jpg"><br></th>
+<th><img id="horiImg1" src="../images/fyp/composite/finished.jpg"><br></th>
+</tr>
+  </table>
+  <h4 align="center">Follow the order planned(this <a href="#step2">order</a>) applying sealent as you progress</h4>
+<table>
+  <tr>
+  <th><img id="vertImg" src="../images/fyp/composite/finallook.jpg"><br></th>
+  </tr>
+</table>
+<h4 align="center">After you are done, place in the order of pre-ply &#x2192; bleeder &#x2192; absorber<br>The pre-ply allow the bleeder and absorber to be removed without much hassle while the absorver would absorb access epoxy</h4>
 </div>
+
+<!--Step 6-->
+<div id="boxc">
+<h4 align="center">Step 6</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/fyp/composite/taping1.jpg"><br></th>
+<th><img id="horiImg" src="../images/fyp/composite/taping2.jpg"><br></th>
+</tr>
+  </table>
+
+  <h4 align="center">Apply your wrap close the the edge when sticking on the stealent tape to allow the wrap to stratch when vacuum is applied. Use extra tape to ensure it's airtight</h4>
+  <table>
+  <tr>
+<th><img id="horiImg1" src="../images/fyp/composite/taping3.jpg"></th>
+  <th><img id="horiImg1" src="../images/fyp/composite/airtight.jpg"></th>
+</tr>
+  </table>
+  <h4 align="center">Your final product should look like the one above. Use a tool to ensure the sealent tape sticks well to the wrap.</h4>
+</div>
+
+<!--Step 7-->
+
+<h4 align="center">Step 7</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/fyp/composite/vaccume1.jpg"></th>
+<th><img id="horiImg" src="../images/fyp/composite/vaccum2.jpg"></th>
+</tr>
+  </table>
+  <h4 align="center">This would allow your the area around the carbon fiber to be vaccumed and the access epoxy to be forced to the absorber.</h4>
+
+  <!--Step 8-->
+  <div id="boxc">
+  <h4 align="center">Step 8</h4>
+  <table>
+  <tr>
+  <th><img id="horiImg" src="../images/fyp/composite/vaccumecheck.jpg"><br></th>
+  <th><img id="horiImg" src="../images/fyp/composite/vaccumecheck2.jpg"><br></th>
+  </tr>
+    </table>
+
+    <h4 align="center">When vaccuming, listen to any air getting sucked in the bag. If there are any, use a tool to push the sealent tape onto the wrap. Repeat this step untill no sound can be heard.<br>
+  Once you can no longer hear any air getting sucked in, Use a pressure gage to check if the pressure is increasing insde the bag, ensure the bag is vaccumed before leaving it to dry overnight or at least 4hours(our carbon fiber was still wet after 4 hours) </h4>
+</div>
+</div>
+<!--End-->
+
+<!--Final Product-->
+  <h2 id="fd" align="center">Dried composite</h2>
+  <div id="box">
+  <table align="center">
+    <tr>
+      <th><img id="vertImg" src="../images/fyp/composite/finalproduct.jpg"><br></th>
+      </tr>
+        </table>
+<h4 align="Center">This is how the composite should look like after it is done drying.</h4>
+  </div>
+<!--end-->
+
+
+
+
+
   <!--end-->
 
 
