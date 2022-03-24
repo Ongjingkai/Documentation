@@ -296,6 +296,27 @@ h2 {
   background-color: #555;
 }
 
+#miniproject, #tools, #make, #bom, #settings {
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+ #miniproject th, #tools th, #bom th {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #a33101;
+}
+
+#miniproject td, #tools td, #make td, #bom td, #settings td {
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #268EE4;
+}
+
 #c1 {
   width: 30%;
 }

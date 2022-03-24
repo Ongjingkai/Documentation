@@ -1,0 +1,114 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ᵔᴥᵔ</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="btt" title="Back to top">Back to Top</button>
+    <script>
+    var backtotop = document.getElementById("btt");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backtotop.style.display = "block";
+      } else {
+        backtotop.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!--Navigation tab below-->
+    <div id="navigation">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Main</a></li>
+          <li><a href="../aboutme.html">About Me</a></li>
+          <li class="dropdown">
+              <a href:"javascript:void(0)" class="dropbtn">ReCap</a>
+              <div class="dropdown-content">
+                <a href="../relearn/arduino.html">Arduino</a>
+                <a href="../relearn/designprocess.html">Design Process</a>
+              </div>
+            </li>
+              <li class="dropdown">
+                <a href:"javascript:void(0)" class="dropbtn">FYP Documation</a>
+                <div class="dropdown-content">
+                  <a href="../fyp/chronology.html">Chronology</a>
+                <a href="../fyp/composite.html">Composite</a>
+                <a href="../fyp/riveting.html">Riveting</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href:"javascript:void(0)" class="dropbtn">FYP Miniproject</a>
+                <div class="dropdown-content">
+                  <a class="active" href="compositemarkout.html">Composite Mark-out</a>
+                </div>
+              </li>
+        </ul>
+      </nav>
+    </div>
+
+<!--content-->
+    <a name="top"></a>
+        <div id="header">
+          <h1>Mini Project: Composite Mark-out</h1>
+        </div>
+        <div id="container">
+          <div id="content">
+
+
+<!--designprocess-->
+            <h2 align="center"> Composite Mark-out</h2>
+            <br>
+            <div id="box">
+              <table>
+                <tr>
+                  <th><img id="horiImg" src="../images/fyp/composite/markout.jpg"><br></th>
+                  </tr>
+              </table>
+              <h4 align="center"></h4>
+              <table id="miniproject">
+                <tr>
+                  <td>What</td>
+                  <td>How</td>
+                  <td>Result</td>
+                </tr>
+                <tr>
+                  <th>Design a cheap, replaceable and better way of marking composite</th>
+                  <th>Using fusion 360 to design the tool<br>
+Using a laser cutter to cut design out<br>
+Product uses scrap material to ensure the part is cheap to reproduce.</th>
+                  <th>Time for students to mark down reduced to 20 sec<br>
+Markout are clear<br>
+Easy to replace<br>
+Easy to use</th>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th><img id="horiImg" src="../images/fyp/composite/miniproject.jpg"><br></th>
+                  </tr>
+              </table>
+              </div>
+              <br>
+            </div>
+            <!--End-->
+</div>
+
+
+      </div>
+    </div>
+    <body>
+    <footer>
+      <div id="footer">
+      Copyrights &copy; Ong Jing Kai.
+      </div>
+    </footer>
+    </html>
