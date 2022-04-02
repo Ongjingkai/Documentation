@@ -43,8 +43,8 @@
             <div class="dropdown-content">
               <a href="chronology.html">Chronology</a>
             <a href="composite.html">Composite</a>
-            <a class="active" href="riveting.html">Riveting</a>
-            <a href="embedded.html">3D printing</a>
+            <a href="riveting.html">Riveting</a>
+            <a class="active" href="embedded.html">3D printing</a>
             </div>
             <li class="dropdown">
               <a href:"javascript:void(0)" class="dropbtn">FYP Miniproject</a>
@@ -63,7 +63,7 @@
       <table id="headerTable">
         <tr>
             <td>
-              <h1>Riveting</h1>
+              <h1>3D Printing</h1>
             </td>
             <td>
               <img src="../images/logo/logo.png" style="width:60px;height:120px">
@@ -77,110 +77,112 @@
         <!--sub navbar for the page to make it easier for me to look at any feature I made-->
             <div id="dnav">
               <ul>
-                  <li><a href="#wut">What is riveting</a></li>
-                  <li><a href="#type">Type of rivets</a></li>
-                  <li><a href="#rd">Rivet Diameter</a></li>
-                  <li><a href="#wrapori2">Wrap Orientation 2</a></li>
-                  <li><a href="#steps">Steps</a></li>
+                  <li><a href="#sap">Software and printer used</a></li>
+                  <li><a href="#embedding">Embeddeding setup</a></li>
                 </ul>
             </div>
   <!--End-->
 
   <!--What is composite-->
-  <h2 id="wut" align="center">What is riveting</h2>
+  <h2 id="sap" align="center">Software and printer used</h2>
   <div id="box">
-      <img id="horiImg" src="../images/fyp/riveting/wut.jpg">
-      <h4>Riveting is a forging process that may be used to join parts together by way of a metal part called a rivet. The rivet acts to join the parts through adjacent surfaces. A straight metal piece is connected through the parts.</h4>
+      <h4>The program used in this demonstration is <a href="https://www.eiger.io/">eiger</a>, and the 3d printed used during my FYP is <a href="https://markforged.com/3d-printers/mark-two">Mark-Two</a>.</h4>
   </div>
   <!--end-->
 
-  <!--type of rivets-->
-  <h2 id="wut" align="center">Type of rivets</h2>
+  <!--embedding stepss-->
+  <h2 id="embedding" align="center">Embeddeding setup</h2>
   <div id="box">
-    <table align="center">
-    <tr>
-      <th><img id="horiImg" src="../images/fyp/riveting/flatcountersunk.jpg"></th>
-      <th><img id="horiImg" src="../images/fyp/riveting/uni.jpg"></th>
-    </tr>
-  </table>
-      <h4 align="center">There are 2 type of solid shank rivet used in the workshop, one of which is the flathead countersunk rivet(Left photo)<br> the other rivet used is the universal head rivets(Right photo)</h4>
+<div id="boxc">
+      <h4 align="center">Embedding for 3d printing</h4>
+      <h4 align="center">To summarize it, embedding for 3d printing is just start to a print, pause it midway, embed components into the 3D print job, and then resume the print, allowing it to 3D print over the components you have embedded.</h4>
   </div>
-  <!--end-->
 
-  <!--rivet diameter-->
-  <h2 id="rd" align="center">Rivet diameter</h2>
-  <div id="box">
-      <h1 align="center"><img id="vert1iImg"  src="../images/fyp/riveting/rivetdia.PNG"></h1>
-      <h4>When riveting ensure you know the type of rivet you would be using and the apporate diameter the end of the diameter should form into.</h4>
-  </div>
-  <!--end-->
-
-
-<!--Steps-->
-<h2 id="steps" align="center">Steps</h2>
-<div id="box">
+  <!--Step 1-->
   <h4 align="center">Step 1</h4>
 <table>
 <tr>
-<th><img id="horiImg" src="../images/fyp/riveting/markout.jpg"><br></th>
+<th><img id="horiImg" src="../images/fyp/printing/import.png"></th>
 </tr>
   </table>
-<h4 align="center">Put some tape over the area you intend to rivet and mark out the area you intend to drill on the tape.</h4>
+<h4 align="center">Import your STL file into your library</h4>
 
 <!--Step 2-->
 <div id="boxc">
-  <h4 align="center">Step 2</h4>
   <table>
   <tr>
-  <th><img id="horiImg1" src="../images/fyp/riveting/dotpunch.jpg"><br></th>
-  </tr>
-    </table>
-    <h4 align="center">To aid you in drilling, Use a dot punch to mark the area you intend to drill</h4>
-
+  <h4 align="center">Step 2</h4>
+<img id="horiImg" src="../images/fyp/printing/setting.png"></th>
+</tr>
+  </table>
+    <h4 align="center">Set your setting for the part you imported.</h4>
 </div>
 
 <!--Step 3-->
 <h4 align="center">Step 3</h4>
 <table>
 <tr>
-  <th><img id="horiImg1" src="../images/fyp/riveting/drilling.jpg"><br></th>
-<th><img id="horiImg1" src="../images/fyp/riveting/finish_drilling.jpg"><br></th>
+  <th><img id="horiImg" src="../images/fyp/printing/turnoffsupport.png"></th>
 </tr>
   </table>
-  <h4 align="center">Align your drill 90 degrees to the work piece and drill. Countersink the area if you are using flathead rivets.</h4>
+  <h4 align="center">Under settings, turn off supports. Eiger does not support support blocker unlike cura, take this into consideration when design your part to be printing using this machine</h4>
 
   <!--Step 4-->
   <div id="boxc">
   <h4 align="center">Step 4</h4>
-  <table>
+  <table align="center">
   <tr>
-  <th><img id="horiImg1" src="../images/fyp/riveting/flushreviting.jpg"><br></th>
-  <th><img id="horiImg1" src="../images/fyp/riveting/unireviting.jpg"><br></th>
+  <th><img id="horiImg" src="../images/fyp/printing/internalview.png"></th>
   </tr>
     </table>
-    <h4 align="center">Ensure you use the correct anvil before riveting.For a thin metal sheet, you can do the backing and riveting alone.</h4>
+    <h4 align="center">Click on internal view.</h4>
 </div>
 
 <!--Step 5-->
 <h4 align="center">Step 5</h4>
 <table>
 <tr>
-<th><img id="horiImg1" src="../images/fyp/riveting/finishedproduct.jpg"><br></th>
+<th><img id="horiImg" src="../images/fyp/printing/internalviewsupport.png"><br></th>
 </tr>
   </table>
-  <h4 align="center">This is how the final product should look like</h4>
+  <h4 align="center">Ensure the support does not show up in the internal view.</h4>
 </div>
 
+<!--Step 6-->
+<div id="boxc">
+<h4 align="center">Step 6</h4>
+<table align="center">
+<tr>
+<th><img id="horiImg" src="../images/fyp/printing/selecting layer.png"></th>
+</tr>
+  </table>
+  <h4 align="center">Select the layer you would like the print to pause to allow you parts to be embedded.</h4>
+  <table align="center">
+  <tr>
+  <th><img id="horiImg" src="../images/fyp/printing/2d view.png"></th>
+  </tr>
+    </table>
+    <h4 align="center">The option to pause after layer will only appear AFTER you select 2D.</h4>
+</div>
 
+<!--Step 5-->
+<h4 align="center">Step 7</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/fyp/printing/save and print.png"></th>
+</tr>
+  </table>
+  <h4 align="center">Save the part and print</h4>
+</div>
 </div>
 
 <!--End-->
 
 
 
-  <!--end-->
 
 
+<!--End-->
 </div>
     <body>
     <footer>
