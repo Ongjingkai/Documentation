@@ -1,0 +1,153 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ᵔᴥᵔ</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="btt" title="Back to top">Back to Top</button>
+    <script>
+    var backtotop = document.getElementById("btt");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backtotop.style.display = "block";
+      } else {
+        backtotop.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+    <!--Navigation tab below-->
+    <div id="navigation">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Main</a></li>
+          <li><a href="../aboutme.html">About Me</a></li>
+          <li class="dropdown">
+              <a href:"javascript:void(0)" class="dropbtn">Skill Set</a>
+              <div class="dropdown-content">
+                <a href="arduino.html">Arduino</a>
+                <a href="designprocess.html">Design Process</a>
+                <a class="active" href="photography.html">Photography</a>
+              </div>
+            </li>
+              <li class="dropdown">
+                <a href:"javascript:void(0)" class="dropbtn">FYP Documation</a>
+                <div class="dropdown-content">
+                  <a href="../fyp/chronology.html">Chronology</a>
+                <a href="../fyp/composite.html">Composite</a>
+                <a href="../fyp/riveting.html">Riveting</a>
+                <a href="../fyp/embedded.html">Embedded Printing</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href:"javascript:void(0)" class="dropbtn">FYP Miniproject</a>
+                <div class="dropdown-content">
+                  <a href="../fypminiproject/compositemarkout.html">Composite Mark-out</a>
+                  <a href="../fypminiproject/rivercover.html">Rivet Cover</a>
+                </div>
+              </li>
+              <li><a href="../contactme.html">Contact me!</a></li>
+        </ul>
+      </nav>
+    </div>
+
+<!--content-->
+    <a name="top"></a>
+        <div id="header">
+          <h1>Photography</h1>
+        </div>
+        <div id="container">
+          <div id="content">
+
+
+<!--Start-->
+            <h2 align="center"> Why photography?</h2>
+            <br>
+            <div id="box">
+            <h4 align="center">I enjoy photography as it teaches me to be patient and be quick on my toes. This hobby allows me to truly appreciate and enjoy the peaceful surrounding. Feel free to download the photos below!</h4>
+            </div>
+            <!--End-->
+
+<!--Photos-->
+<h2 align="center"> Architecture photography</h2>
+<div id="box">
+
+  <div class="row">
+    <div class="column">
+      <img src="../images/photography/IMG_20210314_192936.jpg" style="width:100%"><br>
+      <h4 align="center">Click <a href="../downloadfiles/photography/IMG_20210314_192936.jpg" download>here</a> to download this photo!</h4>
+    </div>
+    <div class="column">
+      <img src="../images/photography/IMG_20210314_191736.jpg" style="width:100%"><br>
+      <h4 align="center">Click <a href="../downloadfiles/photography/IMG_20210314_191736.jpg" download>here</a> to download this photo!</h4>
+    </div>
+  </div>
+        </div>
+
+        <h2 align="center"> Animal Photography</h2>
+        <div id="box">
+
+          <div class="row">
+            <div class="column">
+              <img src="../images/photography/IMG_3770.jpg" style="width:100%"><br>
+              <h4 align="center">Click <a href="../downloadfiles/photography/IMG_3770.jpg" download>here</a> to download this photo!</h4>
+            </div>
+            <div class="column">
+              <img src="../images/photography/IMG_4333.jpg" style="width:100%">
+              <br>
+              <h4 align="center">Click <a href="../downloadfiles/photography/IMG_4333.jpg" download>here</a> to download this photo!</h4>
+            </div>
+          </div>
+                </div>
+                              <!--End-->
+
+<!--Photos-->
+  <h2 align="center"> More Photos?</h2>
+  <div id="box">
+    <h4 align="center">Click <a href="https://www.pexels.com/@kai-6927166/">here</a> to visit my pexel link!</h4>
+  </div>
+<!--End-->
+
+
+</div>
+
+
+      </div>
+    </div>
+    <body>
+    <footer>
+      <div id="footer">
+      Copyrights &copy; Ong Jing Kai.
+      </div>
+    </footer>
+    </html>
