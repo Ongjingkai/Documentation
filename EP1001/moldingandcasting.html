@@ -7,24 +7,6 @@
   </head>
   <body>
     <button onclick="topFunction()" id="btt" title="Back to top">Back to Top</button>
-    <script>
-    var backtotop = document.getElementById("btt");
-
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backtotop.style.display = "block";
-      } else {
-        backtotop.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
 <!--Navigation tab below-->
 <div id="navigation">
   <nav>
@@ -39,7 +21,7 @@
             <a href="../relearn/photography.html">Photography</a>
           </div>
           </li>
-          <li class="dropdown">
+<!--          <li class="dropdown">
             <a href:"javascript:void(0)" class="dropbtn">FYP Documation</a>
             <div class="dropdown-content">
               <a href="chronology.html">Chronology</a>
@@ -53,7 +35,7 @@
                 <a href="../fypminiproject/compositemarkout.html">Composite Mark-out</a>
                 <a href="../fypminiproject/rivercover.html">Rivet Cover</a>
               </div>
-            </li>
+            </li>-->
             <li class="dropdown">
               <a href:"javascript:void(0)" class="dropbtn">EP1001</a>
               <div class="dropdown-content">
@@ -84,13 +66,13 @@
     <div id="container">
       <div id="content">
 <h3 align="center">(^∇^*=) This page is rather long! Free free to select the option from the navigation bar below. (=*^∇^)</h3>
+
         <!--sub navbar for the page to make it easier for me to look at any feature I made-->
-            <div id="dnav">
-              <ul>
-                  <li><a href="#wut">What is molding and casting</a></li>
-                  <li><a href="#pmm">Preparing My mold</a></li>
-                </ul>
-            </div>
+        <div id="navbar">
+        <a href="#wut" >What is Molding and Casting</a>
+        <a href="#pmm">Preparing My mold</a>
+        <a href="#navigation" style="color:blue; float:right;">Back to Top</a>
+        </div>
   <!--End-->
 
   <!--What is composite-->
@@ -167,12 +149,24 @@
 
 <!--End-->
 
-
-
-  <!--end-->
-
-
 </div>
+<!--For Ze sticky Navbar-->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+}
+}
+</script>
+<!--End-->
+
     <body>
     <footer>
       <div id="footer">
