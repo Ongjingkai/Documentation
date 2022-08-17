@@ -27,6 +27,8 @@ background-attachment: fixed;
 }
 
 /*NavBar*/
+
+
 nav ul {
 list-style-type: none;
 overflow: hidden;
@@ -89,6 +91,34 @@ display: inline-block;
 
 /*NavBar end*/
 
+
+
+/*Old Start*/
+#dnav{
+padding: 5px;
+background-color: #918E85;
+border-radius: 5px;
+font-weight: bold;
+font-size: 70%;
+display: block;
+}
+
+#dnav li {
+display: block;
+border: 2px solid black;
+width: 100%;
+display: inline;
+padding: 0.8% 1% 0.8% 1%;
+font-weight: bold;
+}
+
+#dnav table {
+width:100%;
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+/*Old Subnav end*/
 #header {
   background-color: #444;
   color: #FFF;
@@ -250,29 +280,7 @@ img, iframe {
   margin-right: auto;
 }
 
-#dnav{
-padding: 5px;
-background-color: #918E85;
-border-radius: 5px;
-font-weight: bold;
-font-size: 70%;
-display: block;
-}
 
-#dnav li {
-display: block;
-border: 2px solid black;
-width: 100%;
-display: inline;
-padding: 0.8% 1% 0.8% 1%;
-font-weight: bold;
-}
-
-#dnav table {
-width:100%;
-border: 1px solid black;
-border-collapse: collapse;
-}
 
 h1 {
 margin-left: auto;
