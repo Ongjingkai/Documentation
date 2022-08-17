@@ -72,6 +72,8 @@
         <div id="navbar">
         <a href="#wut" >What is Electronic design</a>
         <a href="#pmm">Setting up eagle</a>
+        <a href="#build">Building your ISP</a>
+
         <a href="#navigation" style="color:blue; float:right;">Back to Top</a>
         </div>
             <!--End-->
@@ -83,7 +85,7 @@
   </div>
   <!--end-->
 
-<!--Steps-->
+<!--Setting up eagle-->
 <h2 id="pmm" align="center">Setting up eagle</h2>
 <div id="box">
   <h4 align="center">Step 1</h4>
@@ -101,13 +103,107 @@
 <div id="boxc">
   <h4 align="center">Step 3</h4>
 <img id="horiImg" src="../images/electronicdesign/Click the green circle.PNG"><br>
-    <h4 align="center">Start your Eagle software and click the circled area to make it active. It should be green before you start your project.</h4>
+    <h4 align="center">Start your Eagle software and click the circled area to make it active. It should be green before you start your project.<br> You should be prepared to start making your first ISP board now.</h4>
+</div>
+</div>
+<!--end-->
+
+<!--Making your schematic-->
+<h2 id="build" align="center">Building your ISP</h2>
+<div id="box">
+    <h4 align="center">Getting the basics down</h4>
+  <table align="center">
+  <tr>
+  <th><img id="horiImg" src="../images/electronicdesign/Adding Wireline.png"><br></th>
+  <th><img id="horiImg" src="../images/electronicdesign/AddingPart.png"><br></th>
+  </tr>
+    </table>
+    <h4 align="center">To add in "wires", use the "net" fuction to connect component together.<br>To add in component, use the "add part" function.</h4>
+    <img id="horiImg1" src="../images/electronicdesign/Adding Label.png">
+<h4 align="center">It is important to label your "wires"! It would be used for placement of component afterwards.</h4>
+<img id="horiImg1" src="../images/electronicdesign/Mostly Under Fab.png">
+<h4 align="center">Most of the component used in the project is under the folder "fab". This is important to save you time.</h4>
+<table align="center">
+<tr>
+<th><img id="horiImg" src="../images/electronicdesign/symbol meaning.PNG"><br></th>
+<th><img id="horiImg" src="../images/electronicdesign/resistor.PNG"><br></th>
+</tr>
+  </table>
+<h4 align="center">In case you <strike>are an idiot</strike> don't know what this symbol means. I would not be labeling it in my drawings.<br>VCC would be the power source, Ground would be well.. the ground? and lastly the resistor.</h4>
+
+<!--Compoment-->
+<div id="boxc">
+  <h4 align="center">Component used in ISP</h4>
+
+<table class="GeneratedTable">
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATtiny85</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10kΩ resistor</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>499Ω resistor</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTDI Header</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6mm Button</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1u capacitor</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>AVR ISP SMD</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>LED</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>VCC</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Ground</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
-  <!--end-->
+
+  <h4 align="center">Building the ISP</h4>
+  <h4 align="center">There are two methods for wiring your circuit board. To begin, manual wiring is used to connect wires from one component to another. When connecting multiple wires, the second method is more efficient and has fewer complications. This is accomplished by naming the wires with the same names that are attached to the respective ends of the component, and Eagle will automatically ask you if you want to connect the two components from the named wires.</h4>
+
+
+<!--Step 3-->
+<div id="boxc">
+  <h4 align="center">Completed schematic diagram</h4>
+<img id="horiImg" src="../images/electronicdesign/Completed.PNG"><br>
+    <h4 align="center">I like my work to be clean and easy to understand(for me at least).<br>Click <a href="../downloadfiles/electronic design/eagle/Cheat_Code.zip" download>here</a> to <strike>copy</strike> cross reference your work.( ͡~ ͜ʖ ͡°)</h4>
+</div>
+</div>
+<!--end-->
 
 </div>
-
+<!--end-->
+</div>
 <!--For Ze sticky Navbar-->
 <script>
 window.onscroll = function() {myFunction()};
@@ -128,7 +224,7 @@ if (window.pageYOffset >= sticky) {
     <body>
     <footer>
       <div id="footer">
-      Copyrights &copy; Ong Jing Kai.
+       Copyrights <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:white;">ඞ</a> Ong Jing Kai.
       </div>
     </footer>
 </html>
