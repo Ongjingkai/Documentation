@@ -76,6 +76,8 @@
         <a href="#pmm">Setting up eagle</a>
         <a href="#build">Building your ISP</a>
         <a href="#completed">Completed schematic diagram</a>
+        <a href="#pcbdesign">Completed PCB design</a>
+        <a href="#export">Exporting</a>
 
         <a href="#navigation" style="color:blue; float:right;">Back to Top</a>
         </div>
@@ -133,7 +135,9 @@
 </tr>
   </table>
 <h4 align="center">In case you <strike>are an idiot</strike> don't know what this symbol means. I would not be labeling it in my drawings.<br>VCC would be the power source, Ground would be well.. the ground? and lastly the resistor.</h4>
-<img id="horiImg1" src="../images/electronicdesign/04_t45_hello-board.PNG">
+<img id="horiImg1" src="../images/electronicdesign/selecting DMC.PNG">
+<h4 align="center">Check for errors by clicking "ctrl + c" together.</h4>
+<img id="horiImg1" src="../images/electronicdesign/04_t45_hello-board.png">
 <h4 align="center">I would be using this schematic to design my own ISP.</h4>
 <!--Compoment-->
 <div id="boxc">
@@ -200,14 +204,80 @@
 <div id="boxc">
   <h4 id="completed" align="center">My Completed schematic diagram</h4>
 <img id="horiImg" src="../images/electronicdesign/Completed.PNG"><br>
-    <h4 align="center">I like my work to be clean and easy to understand(for me at least).<br>Click <a href="../downloadfiles/electronic design/eagle/Cheat_Code.zip" download>here</a> to <strike>copy</strike> cross reference your work.( ͡~ ͜ʖ ͡°)</h4>
+    <h4 align="center">I like my work to be clean and easy to understand(for me at least). Check for errors before continuing<br>Click <a href="../downloadfiles/electronic design/eagle/Cheat_Code.zip" download>here</a> to <strike>copy</strike> cross reference your work.( ͡~ ͜ʖ ͡°)</h4>
 </div>
-
-<img id="horiImg1" src="../images/electronicdesign/switchtoboard.PNG"><br>
+<table align="center">
+  <tr>
+<th><img id="horiImg" src="../images/electronicdesign/switchtoboard.PNG"></th>
+<th><img id="horiImg" src="../images/electronicdesign/create new.PNG"></th>
+</tr>
+</table>
     <h4 align="center">After completing your schematic, it's time to generate your board.</h4>
 
-</div>
+    <div id="boxc">
+    <img id="horiImg" src="../images/electronicdesign/firstloadin.png"><br>
+        <h4 align="center">Upon loading in, your component would be at the side.</h4>
+<table align="center" id="pcbdesign">
+    <tr>
+    <th><img id="vertImg1" src="../images/electronicdesign/wirelocation.png"><th>
+    <th><img id="horiImg" src="../images/electronicdesign/pcb design.png"><th>
+    </tr>
+      </table>
+            <h4 align="center">With the help of the yellow lines provided by the software,orginize your board using wires(see left photo). Check for errors before continuing </h4>
 
+            <img id="horiImg1" src="../images/electronicdesign/selecting DMC.png">
+            <h4 align="center">Now we would need to change the settings the wire size and clearence. Start by selecting DRC </h4>
+            <table align="center">
+                <tr>
+                <th><img id="vertImg1" src="../images/electronicdesign/size.png"><th>
+                <th><img id="horiImg" src="../images/electronicdesign/clearence.png"><th>
+                </tr>
+                  </table>
+                  <h4 align="center">Just set the setting to the ones provided above and check for errors if any.</h4>
+            <table align="center">
+                <tr>
+                <th><img id="vertImg1" src="../images/electronicdesign/selecting milling.png"><th>
+                <th><img id="horiImg" src="../images/electronicdesign/Proper outline.png"><th>
+                </tr>
+                  </table>
+                  <h4 align="center">Now switch the layer to 46 milling and add an outline around your PCB.<br>Click <a href="../downloadfiles/electronic design/eagle/Cheat_Code board.zip" download>here</a> to <strike>copy</strike> cross reference your work.( ͡~ ͜ʖ ͡°)</h4>
+    </div>
+    <table align="center">
+        <tr>
+        <th><img id="vertImg1" src="../images/electronicdesign/Layersetting.png"><th>
+        <th><img id="horiImg1" src="../images/electronicdesign/onlytopandmilling.PNG"><th>
+        </tr>
+          </table>
+          <h4 align="center">We would only need to get the "top" and "milling" layer so do the next step individually.</h4>
+
+          <div id="boxc">
+            <h4 id="export" align="center">Exporting</h4>
+            <table align="center">
+                <tr>
+                <th><img id="vertImg1" src="../images/electronicdesign/exportas.png"><th>
+                <th><img id="horiImg" src="../images/electronicdesign/exportsetting.PNG"><th>
+                </tr>
+                  </table>
+              <h4 align="center">You would need to export each layer as PNG. Select export as "image" and ensure "manochrome" is selected and resolution is 1000.</h4>
+              <table align="center">
+                  <tr>
+                  <th><img id="horiImg" src="../images/electronicdesign/Sussy_wires.png"><th>
+                  <th><img id="horiImg" src="../images/electronicdesign/amongus_trace.png"><th>
+                  </tr>
+                    </table>
+                    <h4 align="center">Your photo would look like this so just crop out the needed part or smt lol</h4>
+                    <img id="horiImg" src="../images/electronicdesign/ysohard.gif">
+                    <h4 align="center">You would need to remove the black box in the center of your outline.<br>The tutorial I watched require me to use special software and waste my time smh. Follow my way or look for other solutions on your own just convert the JPG to PNG online. <br>
+                    Click <a href="../downloadfiles/electronic design/deeznutz.zip" download>here</a> to <strike>copy</strike> cross reference your work.( ͡~ ͜ʖ ͡°)</h4>
+          </div>
+          <table align="center">
+              <tr>
+              <th><img id="horiImg" src="../images/electronicdesign/traced.png"><th>
+              <th><img id="horiImg" src="../images/electronicdesign/outline.PNG"><th>
+              </tr>
+                </table>
+  <h4 align="center">All you would have to do now is to just <a href="electronicproduction.html">convert them to G-code.<a></h4>
+</div>
 
 </div>
 <!--end-->
