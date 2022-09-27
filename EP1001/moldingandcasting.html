@@ -76,6 +76,10 @@
         <a href="#wut" >What is Molding and Casting</a>
         <a href="#pmm">Preparing My mold</a>
         <a href="#fin">Finished product</a>
+        <a href="#dpl">Downloading Post-Library</a>
+        <a href="#gncc">Generating Tool Path</a>
+        <a href="#gnccc">Generating G-code</a>
+        <a href="#cfe">Simulating</a>
         <a href="#navigation" style="color:blue; float:right;">Back to Top</a>
         </div>
   <!--End-->
@@ -132,7 +136,7 @@
       </table>
       <h4 align="center">Now encase your box with model cut-out into a bigger box. It is important you name your bodies to ensure you do not get confused.</h4>
     </div>
-</div>
+
 
 <!--Step 5-->
 <h4 align="center">Step 5</h4>
@@ -152,6 +156,151 @@
 </div>
 </div>
 
+<!--Downloading Post-library-->
+<h2 id="dpl" align="center">Downloading Post-library</h2>
+<div id="box">
+  <br>
+  <table>
+  <tr>
+  <th><img id="horiImg" src="../images/moldingandcasting/PostLibrary.png"></th>
+  </tr>
+    </table>
+<h4 align="center">Click <a href="https://cam.autodesk.com/hsmposts">here</a> to download stepcraft's process that would be used later.<br>
+   Scroll down and search for "stepcraft" and download the first uccnc, remember to put the file in an area easily accessible.</h4>
+</div>
+
+<!--generating Tool Path-->
+<h2 id="gncc" align="center">Generating Tool Path</h2>
+<div id="box">
+  <div id="boxc">
+  <h4 align="center">Step 1</h4>
+  <table>
+  <tr>
+  <th><img id="horiImg" src="../images/moldingandcasting/manufacturing.png"></th>
+  </tr>
+    </table>
+<h4 align="center">Firstly, switch to manufacturing in fusion.</h4>
+</div>
+<!--step 2-->
+<h4 align="center">Step 2</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/newsetup.png"></th>
+</tr>
+  </table>
+<h4 align="center">Now create a new setup.</h4>
+<!--step 3-->
+<div id="boxc">
+<h4 align="center">Step 3</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/adaptive.png"></th>
+</tr>
+  </table>
+<h4 align="center">Now select adaptive clearing</h4>
+</div>
+<!--step 4-->
+<h4 align="center">Step 4</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/tooledit.png"></th>
+</tr>
+  </table>
+<h4 align="center">Rightclick your "adaptive" and click tool edit and enter the values in.</h4>
+
+<!--step 5-->
+<div id="boxc">
+<h4 align="center">Step 5</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/selectingtools.png"></th>
+<th><img id="horiImg" src="../images/moldingandcasting/settings.PNG"></th>
+</tr>
+  </table>
+<h4 align="center">Selecting your tool first would make setting later easier. open the right photo and change the settings in the red circle.
+  <br>To save you time, the rest of the settings are the same.</h4>
+</div>
+<!--Tool path generated-->
+<h4 align="center">Tool path generated</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/finishedtoolpath.png"></th>
+</tr>
+  </table>
+<h4 align="center">After you are done, you should see the tool path. We would be generating our ".nc" from this tool path.</h4>
+</div>
+
+<!--generating Tool Path-->
+<h2 id="gnccc" align="center">Generating G-code</h2>
+<div id="box">
+  <div id="boxc">
+  <h4 align="center">Step 1</h4>
+  <table>
+  <tr>
+  <th><img id="horiImg" src="../images/moldingandcasting/ncprogram.png"></th>
+  </tr>
+    </table>
+  <h4 align="center">Start by selecting NC program under setup.</h4>
+</div>
+<!--step 2-->
+<h4 align="center">Step 2</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/selectinglibrary.png"></th>
+</tr>
+  </table>
+<h4 align="center">Now click the icon I highlighted.</h4>
+<!--step 3-->
+<div id="boxc">
+<h4 align="center">Step 3</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/importing1-3.png"></th>
+<th><img id="horiImg" src="../images/moldingandcasting/importing2-3.png"></th>
+<th><img id="horiImg" src="../images/moldingandcasting/importing3-3.png"></th>
+</tr>
+  </table>
+<h4 align="center">Remember the earlier <a href="#dpl">file I told you download</a>? Well, now you need to select that.<br>
+After you are done, click select.</h4>
+</div>
+<!--step 4-->
+<h4 align="center">Step 4</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/importingdone.png"></th>
+</tr>
+  </table>
+<h4 align="center">Change your unit to "Document unit" to reduce the number of <strike>bullshit</strike> issues you have to face later.</h4>
+<!--step 5-->
+<div id="boxc">
+<h4 align="center">Step 5</h4>
+<table>
+<tr>
+<th><img id="horiImg" src="../images/moldingandcasting/genaratingcode.png"></th>
+<th><img id="horiImg" src="../images/moldingandcasting/generated.png"></th>
+</tr>
+  </table>
+<h4 align="center">Right click and select post process from your NC program to generate your G-codes.<br>
+Click <a href="../downloadfiles/moldingandcasting/1001.zip" download>here</a> to download my NC code.</h4>
+</div>
+</div>
+<!--Checking for errors-->
+
+<h2 id="cfe" align="center">Simulating</h2>
+<div id="box">
+  <table>
+  <tr>
+  <th><img id="horiImg" src="../images/moldingandcasting/simulate.png"></th>
+  <th><img id="vertImg1" src="../images/moldingandcasting/simulate.gif"></th>
+  </tr>
+    </table>
+  <h4 align="center">If you want to see how your tool would go, just click on simulate.</h4>
+  </div>
+  </div>
+
+
+
+</div>
 <!--End-->
 
 </div>
